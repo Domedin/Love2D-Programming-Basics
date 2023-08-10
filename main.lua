@@ -5,13 +5,14 @@ function increaseMessage(i, a)
     message = message + i
 end
 
-
+--this function doubles the parameter value
 function double(val)
     val = val * 2
     return val
 end
-
+--[[
 message = double(12)
+]]
 
 chicken = double(message)
 
