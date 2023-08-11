@@ -1,22 +1,16 @@
 message = 0
-chicken = 0
 
-function increaseMessage(i, a)
-    message = message + i
-end
+testScores = {}
 
---this function doubles the parameter value
-function double(val)
-    val = val * 2
-    return val
-end
---[[
-message = double(12)
-]]
+table.insert(testScores, 95)
+table.insert(testScores, 87)
+table.insert(testScores, 98)
 
-chicken = double(message)
+testScores["math"] = 91
+
+message = testScores["math"]
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(50))
-    love.graphics.print(chicken)
+    love.graphics.print(message)
 end
